@@ -1,0 +1,11 @@
+[
+  {
+    "customerId": 1,
+    "name": "abc",
+    "address": "address",
+    "phoneNo": "897968",
+    "userName": "abc",
+    "password": "123",
+    "email": "abc@gmail.com"
+  }
+]

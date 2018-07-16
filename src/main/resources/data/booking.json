@@ -1,0 +1,9 @@
+[
+  {
+    "bookingId": 1,
+    "hotelId": "hotel123",
+    "roomType": "DELUX",
+    "startDate": "2018-07-16T20:38:59.000+0000",
+    "endDate": "2018-07-16T20:38:59.000+0000"
+  }
+]

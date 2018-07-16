@@ -1,0 +1,18 @@
+[
+  {
+    "id": "5b4cef11846aac05a65839b7",
+    "hotelId": "hotel123",
+    "roomList": [
+      {
+        "roomType": "DELUX",
+        "images": [],
+        "amenities": []
+      },
+      {
+        "roomType": "PREMIUM",
+        "images": [],
+        "amenities": []
+      }
+    ]
+  }
+]

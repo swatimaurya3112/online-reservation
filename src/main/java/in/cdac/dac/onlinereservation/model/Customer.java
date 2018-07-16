@@ -1,5 +1,7 @@
 package in.cdac.dac.onlinereservation.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -8,8 +10,8 @@ import java.io.Serializable;
  */
 
 @Entity
-@Table(name="User")
-public class User implements Serializable{
+@Table(name="Customer")
+public class Customer implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
