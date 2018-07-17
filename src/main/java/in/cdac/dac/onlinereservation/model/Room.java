@@ -12,7 +12,6 @@ public class Room {
         PREMIUM
     }
 
-
     private Type roomType;
 
     private List<String> images;
@@ -22,6 +21,22 @@ public class Room {
     private int numberOfRooms;
 
     private Double price;
+
+    public int getNumberOfRooms() {
+        return numberOfRooms;
+    }
+
+    public void setNumberOfRooms(int numberOfRooms) {
+        this.numberOfRooms = numberOfRooms;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
 
     public Type getRoomType() {
         return roomType;

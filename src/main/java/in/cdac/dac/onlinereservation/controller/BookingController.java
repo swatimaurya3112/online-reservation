@@ -1,6 +1,7 @@
 package in.cdac.dac.onlinereservation.controller;
 
 import in.cdac.dac.onlinereservation.model.Booking;
+import in.cdac.dac.onlinereservation.model.BookingRequest;
 import in.cdac.dac.onlinereservation.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -29,5 +30,10 @@ public class BookingController  {
                                  @Valid @RequestBody Booking booking) {
         return bookingService.createBooking(customerId, booking);
 
+    }
+
+    @PostMapping("bookings")
+    public List<Booking> getAllBookingsForHotelWithinRange(@Valid @RequestBody BookingRequest request) {
+        return bookingService.getAllBookingWithInPeriod(request.getHotelId(),request.getStartDate(),request.getEndDate());
     }
 }

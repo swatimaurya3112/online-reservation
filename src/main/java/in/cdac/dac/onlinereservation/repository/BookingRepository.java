@@ -8,5 +8,6 @@ import org.springframework.stereotype.Repository;
  * Created by swati on 7/17/18.
  */
 @Repository
-public interface BookingRepository extends JpaRepository<Booking,Long> {
+public interface BookingRepository extends JpaRepository<Booking,Long>, CustomisedBookingRepository {
+
 }

@@ -15,13 +15,8 @@ import java.util.Date;
 @SpringBootApplication
 public class OnlineReservationApplication {
 
-	@Autowired
-	private BookingService bookingService;
-
 	public static void main(String[] args) {
 		SpringApplication.run(OnlineReservationApplication.class, args);
-
-		OnlineReservationApplication application = new OnlineReservationApplication();
 
 	}
 }

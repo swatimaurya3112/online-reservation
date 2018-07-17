@@ -6,6 +6,7 @@ import in.cdac.dac.onlinereservation.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -29,8 +30,11 @@ public class BookingService {
     }
 
     public List<Booking> getAllBooking() {
-
         return bookingRepository.findAll();
+    }
+
+    public List<Booking> getAllBookingWithInPeriod(String hotelId,Date startDate,Date endDate) {
+        return bookingRepository.findBookingsForHotelWithinRange(hotelId,startDate,endDate);
     }
 
 }
