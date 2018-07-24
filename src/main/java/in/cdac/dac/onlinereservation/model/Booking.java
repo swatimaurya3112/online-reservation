@@ -26,7 +26,7 @@ public class Booking implements Serializable {
     private Customer customer;
 
     @Column(name ="room_type",nullable = false)
-    private Room.Type roomType;
+    private String roomType;
 
     @Column(name="start_date",nullable = false)
     private Date startDate;
@@ -58,11 +58,11 @@ public class Booking implements Serializable {
         this.customer = customer;
     }
 
-    public Room.Type getRoomType() {
+    public String getRoomType() {
         return roomType;
     }
 
-    public void setRoomType(Room.Type roomType) {
+    public void setRoomType(String roomType) {
         this.roomType = roomType;
     }
 

@@ -20,16 +20,19 @@ public class CustomerController {
     CustomerService customerService;
 
     @GetMapping("/customers")
+    @CrossOrigin(origins = "http://localhost:4200")
     public List<Customer> getAllCustomers() {
         return customerService.getAllCustomers();
     }
 
     @PostMapping("/customers")
+    @CrossOrigin(origins = "http://localhost:4200")
     public Customer createUser(@Valid @RequestBody Customer customer){
         return customerService.addCustomer(customer);
     }
 
     @GetMapping("/customers/{id}")
+    @CrossOrigin(origins = "http://localhost:4200")
     public Customer getUserById(@PathVariable(value = "id") Long userId) {
         return customerService.getCustomerById(userId);
     }

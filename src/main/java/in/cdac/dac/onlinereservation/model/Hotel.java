@@ -16,7 +16,9 @@ public class Hotel {
     @Id
     private String id;
 
-    private String address;
+    private String name;
+
+    private String image;
 
     private List<Room> roomList;
 
@@ -34,5 +36,21 @@ public class Hotel {
 
     public void setRoomList(List<Room> roomList) {
         this.roomList = roomList;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

@@ -7,8 +7,8 @@ import java.util.Date;
  */
 public class BookingRequest {
     private String hotelId;
-    private Date startDate;
-    private Date endDate;
+    private Date from;
+    private Date to;
 
     public String getHotelId() {
         return hotelId;
@@ -18,19 +18,19 @@ public class BookingRequest {
         this.hotelId = hotelId;
     }
 
-    public Date getStartDate() {
-        return startDate;
+    public Date getFrom() {
+        return from;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
+    public void setFrom(Date from) {
+        this.from = from;
     }
 
-    public Date getEndDate() {
-        return endDate;
+    public Date getTo() {
+        return to;
     }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
+    public void setTo(Date to) {
+        this.to = to;
     }
 }
