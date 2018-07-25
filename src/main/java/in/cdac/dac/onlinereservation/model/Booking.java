@@ -29,10 +29,13 @@ public class Booking implements Serializable {
     private String roomType;
 
     @Column(name="start_date",nullable = false)
-    private Date startDate;
+    private Date from;
 
     @Column(name="end_date",nullable = false)
-    private Date endDate;
+    private Date to;
+
+    @Column(name = "adults", nullable = false)
+    private int adults;
 
     public Long getBookingId() {
         return bookingId;
@@ -66,19 +69,28 @@ public class Booking implements Serializable {
         this.roomType = roomType;
     }
 
-    public Date getStartDate() {
-        return startDate;
+    public Date getFrom() {
+        return from;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
+    public void setFrom(Date from) {
+        this.from = from;
     }
 
-    public Date getEndDate() {
-        return endDate;
+    public Date getTo() {
+        return to;
     }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
+    public void setTo(Date to) {
+        this.to = to;
     }
+
+    public int getAdults() {
+        return adults;
+    }
+
+    public void setAdults(int adults) {
+        this.adults = adults;
+    }
+
 }

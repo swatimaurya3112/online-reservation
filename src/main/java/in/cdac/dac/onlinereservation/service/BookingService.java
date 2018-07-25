@@ -1,6 +1,7 @@
 package in.cdac.dac.onlinereservation.service;
 
 import in.cdac.dac.onlinereservation.model.Booking;
+import in.cdac.dac.onlinereservation.model.SearchRequest;
 import in.cdac.dac.onlinereservation.model.Hotel;
 import in.cdac.dac.onlinereservation.model.Room;
 import in.cdac.dac.onlinereservation.repository.BookingRepository;

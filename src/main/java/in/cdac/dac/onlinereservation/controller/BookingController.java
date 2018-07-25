@@ -1,7 +1,7 @@
 package in.cdac.dac.onlinereservation.controller;
 
 import in.cdac.dac.onlinereservation.model.Booking;
-import in.cdac.dac.onlinereservation.model.BookingRequest;
+import in.cdac.dac.onlinereservation.model.SearchRequest;
 import in.cdac.dac.onlinereservation.model.Room;
 import in.cdac.dac.onlinereservation.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +27,7 @@ public class BookingController  {
         return bookingService.getAllBooking();
     }
 
-    @PostMapping("/bookings/{customerId}/booking")
+    @PostMapping("/bookings/{customerId}/book")
     @CrossOrigin(origins = "http://localhost:4200")
     public Booking createBooking(@PathVariable (value = "customerId") Long customerId,
                                  @Valid @RequestBody Booking booking) {
@@ -37,7 +37,7 @@ public class BookingController  {
 
     @PostMapping("/availability")
     @CrossOrigin(origins = "http://localhost:4200")
-    public List<Room> getAvailableRooms(@Valid @RequestBody BookingRequest request) {
+    public List<Room> getAvailableRooms(@Valid @RequestBody SearchRequest request) {
         return bookingService.getAvailableRooms(request.getHotelId(),request.getFrom(),request.getTo());
     }
 

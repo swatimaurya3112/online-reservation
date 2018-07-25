@@ -5,10 +5,11 @@ import java.util.Date;
 /**
  * Created by swati on 7/18/18.
  */
-public class BookingRequest {
+public class SearchRequest {
     private String hotelId;
     private Date from;
     private Date to;
+    private int adults;
 
     public String getHotelId() {
         return hotelId;
@@ -33,4 +34,13 @@ public class BookingRequest {
     public void setTo(Date to) {
         this.to = to;
     }
+
+    public int getAdults() {
+        return adults;
+    }
+
+    public void setAdults(int adults) {
+        this.adults = adults;
+    }
+
 }

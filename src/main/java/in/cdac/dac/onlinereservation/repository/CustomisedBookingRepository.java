@@ -15,8 +15,8 @@ public interface CustomisedBookingRepository extends CrudRepository<Booking,Long
 
     @Query("Select b from Booking b where " +
                   "b.hotelId = :hotelId "+
-                  "and b.startDate <= :endDate " +
-                  "and b.endDate >= :startDate ")
+                  "and b.from <= :endDate " +
+                  "and b.to >= :startDate ")
     public List<Booking> findBookingsForHotelWithinRange(@Param("hotelId") String hotelId,
                                                   @Param("startDate") Date startDate,
                                                   @Param("endDate") Date endDate);
