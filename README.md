@@ -10,6 +10,37 @@ Online reservation service will provide a Restful curd APIs for integration with
 git clone https://github.com/swatimaurya3112/online-reservation.git
 ```
 
+**2. Install mongodb
+```bash
+https://treehouse.github.io/installation-guides/mac/mongo-mac.html
+```
+**3. Install mysql
+```bash
+brew install mysql
+```
+**4. Set mysql to run in background
+```bash
+brew services start mysql
+```
+**5. Create new user and grant it all priviledges
+```bash
+mysql -uroot
+CREATE USER 'swati'@'localhost' IDENTIFIED BY 'swati';
+GRANT ALL PRIVILEGES ON * . * TO 'swati'@'localhost';
+```
+**6. Create a new database
+```bash
+CREATE database reservation;
+```
+**7. Install mongodb
+```bash
+brew install mongodb
+```
+**8 Set mongo to run in background
+```bash
+brew services start mongodb
+```
+
 **2. Build and run the backend app using maven**
 
 ```bash
